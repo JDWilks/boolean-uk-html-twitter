@@ -9,100 +9,154 @@
   </head>
   <body>
     <main class="structure">
-      <div class="leftmenu">
-        <ul>
+      <aside class="leftmenu">
+        <div class="logo">
+          <img src="/assets/icons/twitter.svg" alt="Twitter Logo" />
+        </div>
+        <ul class="nav-list">
           <li class="icons">
-            <img src="" alt="Twitter Logo" />
-          </li>
-
-          <li class="icons">
-            <img src="" alt="Home icon" />
+            <img src="/assets/icons/home.svg" alt="Home icon" />
             <p>Home</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Explore icon" />
+            <img src="/assets/icons/hashtag.svg" alt="Explore icon" />
             <p>Explore</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Notifications icon" />
+            <img src="/assets/icons/alarm.svg" alt="Notifications icon" />
             <p>Notifications</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Message icon" />
+            <img src="/assets/icons/envelope.svg" alt="Message icon" />
             <p>Messages</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Bookmarks icon" />
+            <img src="/assets/icons/bookmark.svg" alt="Bookmarks icon" />
             <p>Bookmarks</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Lists icon" />
+            <img src="/assets/icons/list.svg" alt="Lists icon" />
             <p>Lists</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="Profile icon" />
+            <img src="/assets/icons/profile.svg" alt="Profile icon" />
             <p>Profile</p>
           </li>
 
           <li class="icons">
-            <img src="" alt="More icon" />
+            <img src="/assets/icons/more.svg" alt="More icon" />
             <p>More</p>
           </li>
-
-          <li class="tweetbutton">
-            <button>Tweet</button>
-          </li>
-
-          <li class="profile">Profilebottom</li>
         </ul>
-      </div>
+        <div class="tweetbutton">
+          <button>Tweet</button>
+        </div>
+        <div class="profilepicbttm">
+          <div>
+            <img
+              class="profilepic"
+              src="/assets/images/me-square2.jpg"
+              alt="Bottom profile pic"
+            />
 
-      <div class="middle">
+            <div>
+              <p>name</p>
+            </div>
+            <div>
+              <p>name</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="middle">
         <div class="middle-top">
           <div class="top-home">
             <h1>Home</h1>
-            <img src="" alt="Star icon" />
+            <img class="icons2" src="/assets/icons/star.svg" alt="Star icon" />
           </div>
-
-          <div class="top-mid">
-            <div class="middle-home">
-              <img src="" alt="Profile Pic" />
-              <label>Message</label>
+          <hr />
+          <div class="middle-home">
+            <img
+              class="photo"
+              src="/assets/images/me-square2.jpg"
+              alt="Profile Pic"
+            />
+            <!-- // Form changes: wrapped input and added button -->
+            <form>
+              <label></label>
               <textarea
                 class="submissionfield"
                 placeholder="Whats Happening"
               ></textarea>
-            </div>
+              <button type="submit">Tweet</button>
+            </form>
+          </div>
 
-            <div class="bttm-home-icons">
-              <img src="" alt="Media icon" />
-              <img src="" alt="Gif icon" />
-              <img src="" alt="Poll icon" />
-              <img src="" alt="Emoji icon" />
-              <img src="" alt="Schedule icon" />
-              <button class="tweetbutton2">Tweet</button>
-            </div>
+          <div class="bttm-home-icons">
+            <img
+              class="icons2"
+              src="/assets/icons/media.svg"
+              alt="Media icon"
+            />
+            <img class="icons2" src="assets/icons/gif.svg" alt="Gif icon" />
+            <img class="icons2" src="assets/icons/poll.svg" alt="Poll icon" />
+            <img class="icons2" src="assets/icons/smile.svg" alt="Emoji icon" />
+            <img
+              class="icons2"
+              src="assets/icons/schedule.svg"
+              alt="Schedule icon"
+            />
+            <button class="tweetbutton2">Tweet</button>
           </div>
         </div>
+        <hr class="hr1" />
 
         <div class="middle-bttm">
           <div class="card">
-            <img src="" alt="Profile Pic" />
-            <p>name <span class="copytime">@copy and time</span></p>
-            <p>
-              tweet copy <span class="hashtags">#tags#tags#tags#tags#</span>
-            </p>
+            <img
+              class="profilepic"
+              src="/assets/images/atcq.jpg"
+              alt="Profile Pic"
+            />
+            <div class="post-content">
+              <p>name <span class="copytime">@copy and time</span></p>
+              <p>
+                tweet copy <span class="hashtags">#tags#tags#tags#tags#</span>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
 
-      <aside class="right">right</aside>
+      <aside class="right">
+        <div class="search">
+          <form>
+            <input class="search" type="text" placeholder="Search Twitter..." />
+            <!-- <button type="submit">Search</button> -->
+          </form>
+        </div>
+
+        <h2>Whats Happening</h2>
+
+        <div class="card">
+          <div class="card-content">
+            <p>text</p>
+            <p>more text</p>
+          </div>
+          <img src="" alt="Photo" />
+        </div>
+
+        <div class="messagestab">
+          Messages
+        </div>
+      </aside>
     </main>
   </body>
 </html>

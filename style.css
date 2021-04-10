@@ -4,24 +4,125 @@
   padding: 0;
   box-sizing: border-box;
   background-color: white;
+  font-family: Helvetica, sans-serif;
 }
 
 .structure {
   display: grid;
-  grid-template-columns: 250px 1fr 400px;
+  grid-template-columns: 250px 1fr 1fr;
   height: 100vh;
 }
 
+/* left menu styling */
+
 .leftmenu {
-  border: 2px solid black;
-  display: grid;
-  grid-template-rows: repeat(auto, 250px);
+  border: 1px solid #e1e8ed;
 }
+
+.nav-list li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 60px;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.tweetbutton button {
+  background-color: rgba(66, 161, 242, 255);
+  padding: 5px 32px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* //////////////////////////// */
+
+/* middle styling */
 
 .middle {
-  border: 2px solid black;
+  border: 1px solid #e1e8ed;
 }
 
+.middle-top {
+  display: grid;
+  grid-template-rows: 3 (1fr, 1fr, 1fr);
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.top-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.middle-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+hr {
+  border-top: 1px solid #f5f8fa;
+}
+
+.hr1 {
+  border-top: 20px solid #f5f8fa;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 60px;
+  margin-left: 10px;
+}
+
+.bttm-home-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tweetbutton2 {
+  background-color: rgba(142, 208, 248, 255);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.icons2 {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* right styling */
+
 .right {
-  border: 2px solid black;
+  border: 1px solid #e1e8ed;
+}
+
+.search {
+  background-color: rgba(236, 226, 226, 0.397);
+  border-radius: 30px;
+  height: 40px;
 }
