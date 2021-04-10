@@ -10,11 +10,20 @@
 .structure {
   display: grid;
 
-  grid-template-columns: 250px 1fr 400px;
+  grid-template-columns: 250px 1fr 300px;
   height: 100vh;
 }
 
 /* left menu styling */
+
+h1 {
+  margin-top: 10px;
+}
+
+.iconsstar {
+  margin-top: 20px;
+  margin-right: 20px;
+}
 
 .leftmenu {
   border: 1px solid #e1e8ed;
@@ -95,6 +104,7 @@ li {
 
 .middle {
   border: 1px solid #e1e8ed;
+  overflow: scroll;
 }
 
 .middle-top {
@@ -113,7 +123,6 @@ h1 {
 }
 
 .submissionfield {
-  /* background-color: rgb(187, 176, 176); */
   width: 1fr;
 
   border: none;
@@ -133,12 +142,12 @@ textarea {
   grid-template-columns: auto 1fr;
 }
 
-hr {
-  border-top: 1px solid #e1e8ed;
+.middle-home::-webkit-scrollbar {
+  display: none;
 }
 
-.icon-star {
-  justify-items: center;
+hr {
+  border-top: 1px solid #e1e8ed;
 }
 
 .hr1 {
@@ -189,6 +198,46 @@ hr {
   height: 25px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+article {
+  display: grid;
+  grid-template:
+    "postimage postcontent"
+    ". postimage-middle";
+
+  grid-gap: 20px;
+}
+
+article:hover {
+  background-color: #f5f8fa;
+}
+
+.postimage {
+  grid-area: postimage;
+}
+
+.postimage:hover {
+  background-color: #f5f8fa;
+}
+
+.postcontent {
+  grid-area: postcontent;
+  margin-left: 50px;
+  background-color: none;
+}
+
+p .postcontent:hover {
+  background-color: #f5f8fa;
+}
+
+.postimage-middle {
+  grid-area: postimage-middle;
+  border-radius: 5px;
+}
+
+.hashtags {
+  color: blue;
 }
 
 /* right styling */
