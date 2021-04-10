@@ -22,18 +22,14 @@
 
 .nav-list {
   display: grid;
-  /* grid-template-rows: auto auto auto auto auto auto auto auto; */
   grid-template-rows: 8 (auto);
-}
-
-.nav-list li {
-  font-size: 1rem;
-  font-weight: bold;
+  grid-gap: 5px;
 }
 
 .logo {
   margin-top: 10px;
   margin-left: 10px;
+  margin-bottom: 5px;
   width: 60px;
 }
 
@@ -48,11 +44,49 @@ li {
   list-style: none;
 }
 
+.sidebar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar:hover {
+  color: rgba(66, 161, 242, 255);
+}
+
 .tweetbutton button {
   background-color: rgba(66, 161, 242, 255);
   padding: 5px 32px;
   border-radius: 10px;
   color: white;
+  margin-left: 20px;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.profilepicbttm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+
+.btm-menu-icon {
+  width: 25px;
+  /* height: 35px; */
+}
+
+.profile-name {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.menu-icon-bttm {
+  margin-top: 30px;
+  text-align: center;
 }
 
 /* //////////////////////////// */
@@ -138,6 +172,9 @@ hr {
   padding: 10px;
   border-radius: 10px;
   color: white;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 .icons2 {
