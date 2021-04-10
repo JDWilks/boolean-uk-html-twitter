@@ -9,7 +9,8 @@
 
 .structure {
   display: grid;
-  grid-template-columns: 250px 1fr 1fr;
+
+  grid-template-columns: 250px 1fr 400px;
   height: 100vh;
 }
 
@@ -17,6 +18,12 @@
 
 .leftmenu {
   border: 1px solid #e1e8ed;
+}
+
+.nav-list {
+  display: grid;
+  /* grid-template-rows: auto auto auto auto auto auto auto auto; */
+  grid-template-rows: 8 (auto);
 }
 
 .nav-list li {
@@ -68,16 +75,36 @@ h1 {
 
 .top-home {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr auto;
+}
+
+.submissionfield {
+  /* background-color: rgb(187, 176, 176); */
+  width: 1fr;
+
+  border: none;
+}
+
+textarea {
+  resize: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  outline: none;
 }
 
 .middle-home {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: auto 1fr;
 }
 
 hr {
-  border-top: 1px solid #f5f8fa;
+  border-top: 1px solid #e1e8ed;
+}
+
+.icon-star {
+  justify-items: center;
 }
 
 .hr1 {
@@ -88,17 +115,22 @@ hr {
   border-radius: 50%;
   width: 100px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .profilepic {
   border-radius: 50%;
   width: 60px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .bttm-home-icons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: auto auto auto auto auto 1fr auto;
+  grid-gap: 5px;
+
+  margin-top: 40px;
 }
 
 .tweetbutton2 {
@@ -109,8 +141,15 @@ hr {
 }
 
 .icons2 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.iconsstar {
+  width: 25px;
+  height: 25px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
