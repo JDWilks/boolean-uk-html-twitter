@@ -32,7 +32,7 @@ h1 {
 .nav-list {
   display: grid;
   grid-template-rows: 8 (auto);
-  grid-gap: 5px;
+  /* grid-gap: 5px; */
 }
 
 .logo {
@@ -43,8 +43,8 @@ h1 {
 }
 
 .icons {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -59,6 +59,7 @@ li {
   gap: 30px;
   font-size: 1rem;
   font-weight: bold;
+  align-items: center;
 }
 
 .sidebar:hover {
@@ -83,18 +84,25 @@ li {
 }
 
 .btm-menu-icon {
-  width: 25px;
+  width: 20px;
   /* height: 35px; */
 }
 
+.profilepic {
+  border-radius: 50%;
+  width: 60px;
+  margin-left: 10px;
+  margin-top: 70px;
+}
+
 .profile-name {
-  margin-top: 30px;
+  margin-top: 90px;
   text-align: left;
   font-size: 0.7rem;
 }
 
 .menu-icon-bttm {
-  margin-top: 30px;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -154,16 +162,16 @@ hr {
   border-top: 20px solid #f5f8fa;
 }
 
-.photo {
+.profilepic2 {
   border-radius: 50%;
-  width: 100px;
+  width: 60px;
   margin-left: 10px;
   margin-top: 10px;
 }
 
-.profilepic {
+.photo {
   border-radius: 50%;
-  width: 60px;
+  width: 100px;
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -204,8 +212,8 @@ article {
   display: grid;
   grid-template:
     "postimage postcontent"
-    ". postimage-middle";
-
+    ". postimage-middle"
+    ". posticon";
   grid-gap: 20px;
 }
 
@@ -223,6 +231,7 @@ article:hover {
 
 .postcontent {
   grid-area: postcontent;
+  /* margin-top: 50px; (not working) */
   margin-left: 50px;
   background-color: none;
 }
@@ -236,8 +245,24 @@ p .postcontent:hover {
   border-radius: 5px;
 }
 
+.posticon {
+  grid-area: posticon;
+  grid-template-rows: auto auto auto auto;
+  width: 20px;
+}
+
+/* below inline-block not working */
+
+/* .posticon img {
+  display: inline-block;
+} */
+
 .hashtags {
   color: blue;
+}
+
+.copytime {
+  color: #657786;
 }
 
 /* right styling */
@@ -250,4 +275,16 @@ p .postcontent:hover {
   background-color: rgba(236, 226, 226, 0.397);
   border-radius: 30px;
   height: 40px;
+  width: 250px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  background-color: rgba(236, 226, 226, 0.397);
+  padding: 20px;
+  border-radius: 5px;
 }
