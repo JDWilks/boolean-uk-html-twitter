@@ -25,6 +25,12 @@ h1 {
   margin-right: 20px;
 }
 
+/* the below code to change the svg colour doesn't work */
+
+.iconsstar svg {
+  fill: rgba(66, 161, 242, 255);
+}
+
 .leftmenu {
   border: 1px solid #e1e8ed;
 }
@@ -110,6 +116,8 @@ li {
 
 /* middle styling */
 
+/* middle top styling */
+
 .middle {
   border: 1px solid #e1e8ed;
   overflow: scroll;
@@ -146,7 +154,6 @@ textarea {
 
 .middle-home {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: auto 1fr;
 }
 
@@ -162,6 +169,45 @@ hr {
   border-top: 20px solid #f5f8fa;
 }
 
+.bttm-home-icons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr auto;
+  grid-gap: 5px;
+
+  margin-top: 40px;
+}
+
+.iconsstar {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.tweetbutton2 {
+  background-color: rgba(142, 208, 248, 255);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+.icons2 {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* middle bottom styling */
+
+.tweet-post {
+  display: grid;
+  grid-template:
+    "postimage postcontent"
+    ". postimage-middle"
+    ". posticon";
+  grid-gap: 20px;
+}
 .profilepic2 {
   border-radius: 50%;
   width: 60px;
@@ -174,47 +220,6 @@ hr {
   width: 100px;
   margin-left: 10px;
   margin-top: 10px;
-}
-
-.bttm-home-icons {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto 1fr auto;
-  grid-gap: 5px;
-
-  margin-top: 40px;
-}
-
-.tweetbutton2 {
-  background-color: rgba(142, 208, 248, 255);
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  width: 100px;
-}
-
-.icons2 {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.iconsstar {
-  width: 25px;
-  height: 25px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-article {
-  display: grid;
-  grid-template:
-    "postimage postcontent"
-    ". postimage-middle"
-    ". posticon";
-  grid-gap: 20px;
 }
 
 article:hover {
@@ -267,8 +272,15 @@ p .postcontent:hover {
 
 /* right styling */
 
+/* right top search bar styling */
+
 .right {
   border: 1px solid #e1e8ed;
+}
+
+.card2 {
+  max-height: 300px;
+  overflow: scroll;
 }
 
 .search {
@@ -281,10 +293,56 @@ p .postcontent:hover {
   margin-top: 5px;
 }
 
+/* first grid styling - whats happening */
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid #e1e8ed;
+  border-bottom-width: 100%;
+}
+
+.card-content {
+  font-size: 0.8rem;
+  color: #657786;
+  padding: 5px 5px;
+}
+
+.line1 {
+  font-size: 0.8rem;
+  color: #657786;
+  margin-bottom: 5px;
+}
+
+.line2 {
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.line3 {
+  font-size: 0.8rem;
+  color: #657786;
+}
+
+.trending {
+  color: blue;
+}
+
 h2 {
   font-size: 1.2rem;
   margin: 15px;
   background-color: rgba(236, 226, 226, 0.397);
   padding: 20px;
+  border-radius: 5px;
+}
+
+.smallimage {
+  width: 60px;
+  margin-right: 5px;
+}
+
+.smallimage img {
+  width: 100%;
   border-radius: 5px;
 }
