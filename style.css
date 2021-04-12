@@ -118,6 +118,13 @@ li {
 
 /* middle top styling */
 
+.photo {
+  border-radius: 50%;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 .middle {
   border: 1px solid #e1e8ed;
   overflow: scroll;
@@ -204,10 +211,19 @@ hr {
   display: grid;
   grid-template:
     "postimage postcontent"
-    ". postimage-middle"
-    ". posticon";
-  grid-gap: 20px;
+    "postimage posticon";
+  grid-gap: 5px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e1e8ed;
+  border-bottom-width: 100%;
 }
+
+.maintweetimage {
+  width: 90%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
 .profilepic2 {
   border-radius: 50%;
   width: 60px;
@@ -215,11 +231,16 @@ hr {
   margin-top: 10px;
 }
 
-.photo {
-  border-radius: 50%;
-  width: 100px;
-  margin-left: 10px;
-  margin-top: 10px;
+.tweetname {
+  font-weight: bold;
+}
+
+.topline {
+  margin: 5px 0;
+}
+
+.bttmline {
+  margin: 5px 0;
 }
 
 article:hover {
@@ -228,6 +249,8 @@ article:hover {
 
 .postimage {
   grid-area: postimage;
+  display: grid;
+  justify-content: center;
 }
 
 .postimage:hover {
@@ -236,9 +259,6 @@ article:hover {
 
 .postcontent {
   grid-area: postcontent;
-  /* margin-top: 50px; (not working) */
-  margin-left: 50px;
-  background-color: none;
 }
 
 p .postcontent:hover {
@@ -247,20 +267,19 @@ p .postcontent:hover {
 
 .postimage-middle {
   grid-area: postimage-middle;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .posticon {
   grid-area: posticon;
-  grid-template-rows: auto auto auto auto;
-  width: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  margin-bottom: 20px;
 }
 
-/* below inline-block not working */
-
-/* .posticon img {
-  display: inline-block;
-} */
+.smallicons {
+  width: 18px;
+}
 
 .hashtags {
   color: blue;
@@ -306,6 +325,7 @@ p .postcontent:hover {
   font-size: 0.8rem;
   color: #657786;
   padding: 5px 5px;
+  margin: 10px;
 }
 
 .line1 {
