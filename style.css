@@ -265,11 +265,6 @@ p .postcontent:hover {
   background-color: #f5f8fa;
 }
 
-.postimage-middle {
-  grid-area: postimage-middle;
-  /* border-radius: 5px; */
-}
-
 .posticon {
   grid-area: posticon;
   display: grid;
@@ -298,7 +293,7 @@ p .postcontent:hover {
 }
 
 .card2 {
-  max-height: 300px;
+  max-height: 400px;
   overflow: scroll;
 }
 
